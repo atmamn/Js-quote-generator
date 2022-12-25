@@ -1,0 +1,81 @@
+body, html {
+	height: 100vh; /*I also used 100%, didn't work*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+body{
+	background-image: url('quotesbg.jpg');
+	height: 100vh; /*I also used 100%, didn't work*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	display: grid;
+	place-items: center;
+}
+
+body span h2{
+	margin: 20px auto;
+	padding: 0;
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	text-transform: capitalize;
+	width: 80%;
+}
+
+.main-section{
+	width: 40vw;
+	height: auto;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+}
+
+.main-section div span{
+	display: block;
+	font-size: 25px;
+}
+
+.random-quote{
+	padding: 55px 10px 10px 10px;
+	line-height: 2.5rem;
+}
+
+.author{
+	margin: 0;
+	padding: 0;
+	color: orangered;
+}
+
+.button{
+	background-color: black;
+	color: white;
+	width: fit-content;
+	text-transform: capitalize;
+	padding: 10px 20px;
+	margin: 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.button:active{
+	background-color: brown;
+}
+
+@media (max-width: 900px) {
+	.main-section{
+		width: 70vw;
+		height: auto;
+		background-color: white;
+		border-radius: 10px;
+		text-align: center;
+	}
+}
